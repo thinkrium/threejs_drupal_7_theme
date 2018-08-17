@@ -1,0 +1,11 @@
+name=Brain
+description=Brain
+core=7.x
+package=thinkrium
+
+regions[content]         = Brain content
+regions[header]          = Brain header
+regions[main_navigation] = Brain main navigation
+regions[main_navigation_anchor] = Brain main navigation anchor
+
+stylesheets[all][] = css/style.css

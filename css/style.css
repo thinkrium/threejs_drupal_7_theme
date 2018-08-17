@@ -1,0 +1,454 @@
+body.front #hidden_content {
+   width: 1px;
+   height: 1px;
+   overflow: none;
+}
+
+body.not-front section {
+   padding-top: 50px;
+}
+
+ #hamburger {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 99999;
+}
+
+ #hamburger span {
+   background: #fff;
+   float: left;
+   clear: both;
+   margin-bottom: 5px;
+   display: block;
+   border-radius: 15px;
+   -webkit-border-radius: 15px;
+   height: 5px;
+   transition: width .5s;
+   -webkit-transition: width .5s; 
+}
+
+ body.not-front #hamburger span,
+ #hamburger.open span {
+   background: #5555f3;
+}
+
+ #hamburger span:nth-child(1),
+ #hamburger span:nth-child(1) { 
+   width: 40px;
+}
+
+#hamburger span:nth-child(2),
+#hamburger span:nth-child(2) { 
+   width: 20px;
+}
+
+
+#hamburger.open span:nth-child(1) { 
+   width: 20px;
+}
+
+#hamburger.open span:nth-child(2) { 
+   width: 40px;
+}
+
+#sub_page_main_content {
+  padding: 25px;
+  margin: 0 auto;
+  width: 80vw;
+}
+
+#loading_progress {
+   position: fixed;
+   width: 100vw;
+   height: 100vh;
+   top: 0;
+   left: 0;
+   background: #fefefe;
+}
+
+#loading_progress h1 { 
+  display: block;
+  width: 50vw;
+  margin: 25vh auto 0 auto;
+}
+
+#loading_progress #progress_bar { 
+  display: block;
+  width: 90vw;
+  margin: auto;
+  height: 3px;  
+}
+
+#load_status {
+  width: 0%; 
+  height: 100%;
+  background: linear-gradient(to left, #5555f3, #8680f3); 
+}
+
+#scroll_instructions {
+   width: 50vw;
+   margin: auto;
+   display: none;
+}
+
+body, html { 
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+body {
+  background: linear-gradient(to right, #5555f3, #8680f3); 
+}
+
+a {
+  text-decoration: none;
+}
+
+
+li {
+   list-style: none !important;
+}
+
+input,
+form {
+  max-width: 80vw;
+}
+
+canvas {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   background: linear-gradient(to right, #5555f3, #8680f3);   
+}
+
+#main_navigation {
+     display: block;
+     color: #333;
+     background: #fefefe;
+     width: 100vw;
+     min-height: 100vh;     
+     position: relative;
+     display: none;
+}
+
+
+#main_navigation.open {
+   display: block;
+}
+
+.region-main-navigation {
+   padding: 50px;
+   width: 60vw;
+   margin: auto;
+}
+
+#sub_page_main_navigation .region-main-navigation ul,
+#main_navigation .region-main-navigation ul {
+   margin: 0;
+   padding: 0 5vw;
+}
+
+#sub_page_main_navigation {
+  width: 100vw;
+  min-height: 100vh;
+  background: #fefefe;
+  position: fixed;
+  top  : 0;
+  left : 0;
+  display: none;  
+  z-index: 9999;
+}
+
+#sub_page_main_navigation .region-main-navigation {
+  position: relative;
+}
+
+#sub_page_main_navigation.open {
+  display: block;
+}
+
+#main_navigation .region-main-navigation li {
+   display: block;
+   margin: 0;
+   padding: 20px 0;
+}
+
+.region-main-navigation a {
+  color: #333;
+  font-size: 26px;
+  font-weight: bold;
+  display: block;
+}
+
+#logo {
+    width: 40px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+#share {
+    width: 30px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+#share img, 
+#logo img {
+  width: 100%;
+}
+
+#share img:nth-child(1), 
+#logo img:nth-child(1) {
+ display: block;
+}
+
+#share img:nth-child(2), 
+#logo img:nth-child(2) {
+ display: none;
+}
+
+
+#share.blue img:nth-child(1), 
+#logo.blue img:nth-child(1) {
+ display: none;
+}
+
+#share.blue img:nth-child(2), 
+#logo.blue img:nth-child(2) {
+ display: block;
+}
+
+
+
+#block-views-front-page-view-block .views-row {
+  display: none;
+}
+
+body.not-front {
+  background: #fefefe;
+}
+
+
+.view-client-website {
+  width: 80vw;
+  margin: auto;
+}
+
+.view-client-website .views-row  {
+   width: 80vw;
+}
+
+.view-client-website .views-row img {
+   width: 100%;
+   height: inherit;
+   display: block;
+}
+
+.breadcrumb { 
+   clear: both;
+   width: 90vw;
+   margin: auto;
+}
+
+#contact_the_thinkrium ul,
+#contact_the_thinkrium li {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#contact_the_thinkrium a  {
+  float: left;
+}
+
+
+#contact_the_thinkrium a,
+select,
+option,
+input[type = 'button'],
+input[type = 'submit'] {
+   display: block;
+   border: 1px solid #ccc;
+   padding: 20px 30px;
+   background: #455ef4;
+   border-radius: 15px;
+   -webkit-border-radius: 5px 15px;
+   color: #fff;
+   -webkit-appearance: none;
+}
+
+#SEO_image img,
+#Marketing_image img,
+#portfolio_image_1 img,
+#portfolio_image_2 img {
+   width: 100%;
+   height: inherit;
+}
+
+  #portfolio_image_1,
+  #portfolio_image_2 {
+    box-shadow: 5px 15px 15px #aaa;
+    -webkit-box-shadow: 5px 15px 15px #aaa;
+   }
+  
+
+
+.panel-separator:nth-child(3) {
+  clear: both;
+}
+
+#SEO_services {
+  width: 55vw;
+  margin: 90px 10vw 0 0 ; 
+ 
+}
+
+#Developer {
+  width: 50vw;
+}
+
+#SEO_image {
+   width: 25vw;
+   margin-left: 25vw;
+}
+
+#marketing_copy {
+  width: 50vw;
+  margin-left:15vw;
+  margin-top: 70px;
+}
+
+#Marketing_image {
+   width: 30vw;
+   float: right;
+   margin-top: 70px;
+}
+
+#Designs {
+  width: 55vw;
+  float: right;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+#portfolio_image_1 {
+  width: 40vw;
+  float: right;
+  margin-top: 75px;
+}
+
+#portfolio_image_2 {
+  width: 25vw;
+  clear: both;
+  margin-top: 90px;
+}
+
+#contact_the_thinkrium  {
+  clear: both;
+}
+
+.view-our-thoughts .views-row {
+    width: 80vw;
+}
+
+.view-our-thoughts .views-row img {
+    width: 100%;
+    height: inherit;
+    display: block;
+    
+}
+
+/*********************************************************************/
+/*******************mobile environment small screens******************/
+/*********************************************************************/
+
+
+@media (max-width: 700px) {
+    
+    #block-views-clients-websites-block-1 .views-row img {
+    }
+
+
+   .region-main-navigation #hamburger {
+      margin-left: 10px;
+      margin-top: 10px;
+   }
+
+   #sub_page_main_navigation .region-main-navigation #hamburger span, 
+   #main_navigation.open .region-main-navigation #hamburger span {
+      background: #111111;
+   }
+
+  .view-clients-websites  {
+     width: 80vw;
+  }
+
+  .view-clients-websites .views-row {
+      width: 80vw;
+  }
+
+  #loading_progress h1 { 
+     width: 90vw;
+  }
+
+#contact_the_thinkrium a {
+   margin: auto;
+   width: 68vw;
+   font-size: 20px;
+}
+
+select,
+option,
+input[type = 'button'],
+input[type = 'submit'] {
+   margin: auto;
+   width: 80vw;
+   font-size: 20px;
+}
+
+  #SEO_services,  
+  #Developer,
+  #portfolio_image_1,
+  #portfolio_image_2,
+  #SEO_image,
+  #Marketing_image,
+  #marketing_copy,
+  #Designs {
+     width: 80vw;
+     
+  }
+
+  #portfolio_image_1,
+  #portfolio_image_2 {
+    box-shadow: 1px 1px 5px #aaa;
+    -webkit-box-shadow: 1px 1px 5px #aaa;
+    margin-top: 0;
+   }
+  
+#marketing_copy,
+#Marketing_image,
+#Designs,
+#SEO_image,
+#SEO_services {
+  margin-left: 0; 
+  margin-top: 0;
+}
+
+}
+/*********************************************************************/
+/*****************end mobile environment small screens****************/
+/*********************************************************************/
+
+
+/*********************************************************************/
+/********************************overlay******************************/
+/*********************************************************************/
+
+/*********************************************************************/
+/********************************overlay******************************/
+/*********************************************************************/
